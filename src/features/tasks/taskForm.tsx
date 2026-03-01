@@ -9,6 +9,7 @@ export default function TaskForm({
   setIsOpen,
   editingTask,
 }: any) {
+  if (!isOpen) return null;
   const dispatch = useAppDispatch();
 
   const [title, setTitle] = useState("");
