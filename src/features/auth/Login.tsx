@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const dispatch = useDispatch();
-  const [loading, setLoading] = useState(false);
-  const [serverError, setServerError] = useState("");
+  const [loading] = useState(false);
+  const [serverError] = useState("");
   const navigate =  useNavigate();
 
   const validationSchema = Yup.object({
